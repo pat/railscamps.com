@@ -1,0 +1,125 @@
+/* Globals */
+html {
+  font-size: 100%;
+  background: #fff url(../images/background.png) repeat-x fixed;
+  color: #484848;
+}
+body {
+  margin: 0 auto 0 auto;
+  padding-top: 4.8em; /* 48px */
+  padding-bottom: 14.4em; /* 144px */
+  width: 600px;
+  font: 62.5% "Myriad Pro", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+}
+a:link, a:visited {
+  color: #484848;
+}
+a:hover, a:focus, a:active {
+  color: #000;
+}
+h1, h2 {
+  font-weight: normal;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.8em; /* 18px */
+  line-height: 1.5em; /* 27px */
+  margin: 2.5em 0 1em 0;
+}
+
+/* Home */
+
+#content, #header {
+  margin-left: 100px;
+}
+
+#decorative-element-what-ya-gonna-do-about-it {
+  position: relative;
+  margin: 0;
+  background: url('../images/yield.png') no-repeat scroll top left;
+  width: 247px;
+  height: 166px;
+  top: 0px;
+  left: -120px;
+}
+
+#header h1 {
+  margin-top: -50px;
+}
+
+#header .summary {
+  font-size: 1.8em; /* 18px */
+  color: #2F96D4;
+  width: 425px;
+  margin: 1.5em 0;
+}
+
+#home dt {
+  position: relative;
+  text-align: right;
+  display: block;
+  width: 200px;
+  margin-top: 1.5em; /* 21px */
+  margin-left: -219px;
+  font-size: 1.3em; /* 13px */
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #2F96D4;
+}
+
+#home dd p, #home ul {
+  margin-top: -1.45em; /* 12.5px */
+}
+
+#home p, #home ul {
+  font-size: 1.4em; /* 14px */
+  line-height: 1.5em;
+}
+
+#home dd ul {
+  
+}
+#home dd ul li {
+  display: inline;
+  padding-left: 12px;
+  padding-right: 2px;
+  background: transparent url(../images/dot.png) no-repeat 0 0.3em;
+}
+#home dd ul li.first {
+  padding-left: 0;
+  background: transparent;
+}
+
+#home ol#events {
+  font-size: 1.8em; /* 18px */
+  line-height: 1.5em; /* 27px */
+}
+
+#home ol#events li {
+  background: transparent url(../images/dot.png) no-repeat 0.2em 0.7em;
+  padding-left: 16px;
+  padding-right: 2px;
+}
+
+a.sponsors img {
+  margin: 0.4em;
+}
+
+ol.sponsors img {
+  width: 45%;
+}
+
+#home ol.sponsors {
+  margin-top: -1.45em;
+}
+
+#home ol.sponsors li {
+  list-style: none;
+  display: inline;
+  margin-right: 2.5%;
+}
+
+#home p.placeholder {
+  margin: 1.5em 0;
+}

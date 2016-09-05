@@ -1,44 +1,45 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Rails Camps</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/screen.css">
-</head>
-<body id="home">
-  <div id="decorative-element-what-ya-gonna-do-about-it"></div>
-  <div id="header">
-    <h1><img src="images/logo.png" alt="Rails Camp" height="110" width="515"></h1>
-    <p class="summary">Imagine yourself and a posse of like-minded ruby hackers on a country retreat with zero internet for a weekend of fun. You'll laugh, hack, learn, cry (well, you probably won&#8217;t cry&#8230; but you know&#8230; it felt poetic) and most likely play a crap-load of Werewolf.</p>
-  </div>
-  <div id="content">
-    <h2>Upcoming Events?</h2>
+  <head>
+    <meta charset="utf-8">
+    <title>Rails Camps</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/screen.css">
+  </head>
+  <body id="home">
+    <div id="decorative-element-what-ya-gonna-do-about-it"></div>
+    <div id="header">
+      <h1><img src="images/logo.png" alt="Rails Camp" height="110" width="515"></h1>
+      <p class="summary">Imagine yourself and a posse of like-minded ruby hackers on a country retreat with zero internet for a weekend of fun. You'll laugh, hack, learn, cry (well, you probably won&#8217;t cry&#8230; but you know&#8230; it felt poetic) and most likely play a crap-load of Werewolf.</p>
+    </div>
+    <div id="content">
+      <h2>Upcoming Events?</h2>
 
-    <ol id="events">
-      <li><a href="#au_jul_2016">Adelaide, Australia, July 2016</a></li><li><a href="#usa_aug_2016">USA, Alturas Lake, Stanley, Idaho, August 2016</a></li>
-      <li><a href="#scl_aut_2016">Somewhere Lovely, Scotland, Autumn 2016</a></li>
-    </ol>
+      <ol id="events">
+        <li><a href="#usa_aug_2016">USA, Alturas Lake, Stanley, Idaho, August 2016</a></li>
+        <li><a href="#scl_aut_2016">Somewhere Lovely, Scotland, Autumn 2016</a></li>
+        <li><a href="#au_dec_2016">Gold Coast Hinterlands, Australia, Dec 2016</a></li>
+      </ol>
 
-    <p class="placeholder">Rails Camps are becoming regular fixtures in countries like Australia, UK, USA, Denmark and Poland. It would be awesome to see more happen elsewhere. Rails Camps happen because people make them happen. People like you.</p>
+      <p class="placeholder">Rails Camps are becoming regular fixtures in countries like Australia, UK, USA, Denmark and Poland. It would be awesome to see more happen elsewhere. Rails Camps happen because people make them happen. People like you.</p>
 
-    <%= erb :'events/radelaide', layout: false %>
-    <%= erb :'events/idaho', layout: false %>
-    <%= erb :'events/scotland', layout: false %>
+      <%= erb :'events/idaho', layout: false %>
+      <%= erb :'events/scotland', layout: false %>
+      <%= erb :'events/gold_coast', layout: false %>
 
-    <%= erb :previous_events, layout: false %>
+      <%= erb :previous_events, layout: false %>
 
 <!--     <h2>The Rails Camp Tee</h2>
-    <p>Head on over to <a href="http://railscamptee.com/">railscamptee.com</a> for the wicked tees.</p> -->
-    <h2>Rails Camp Runs</h2>
-    <p>Often Rails Camps have charity runs as part of their event - <a href="http://railsrunners.org">Railsrunners</a> is built for this very purpose.</p>
-  </div>
+      <p>Head on over to <a href="http://railscamptee.com/">railscamptee.com</a> for the wicked tees.</p> -->
+      <h2>Rails Camp Runs</h2>
+      <p>Often Rails Camps have charity runs as part of their event - <a href="http://railsrunners.org">Railsrunners</a> is built for this very purpose.</p>
+    </div>
 
-  <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-  </script>
-  <script type="text/javascript">
-  _uacct = "UA-2475317-9";
-  urchinTracker();
-  </script>
-</body>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+     _uacct = "UA-2475317-9";
+     urchinTracker();
+    </script>
+  </body>
 </html>

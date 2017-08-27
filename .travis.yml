@@ -1,0 +1,16 @@
+language: ruby
+rvm: 2.4.1
+sudo: false
+before_install:
+- pip install --upgrade --user awscli
+- gem update --system
+- gem install bundler
+script: bundle exec jekyll build
+after_script:
+- aws s3 cp _site s3://rails-camps-site/ --recursive --acl public-read
+branches:
+  only:
+  - master
+env:
+  global:
+    secure: A0csqPOQ9RihtpjRYp5aWv7wcxqUwFWY5+SZikd7RR5tPm1HL9MeOTcGZLsgD4Y7rk4ox8bYoJjSLzFwGzE8WBn6BQRm+itBiDHhBOJEMzwo5JQS8LUJuUiHCP9DyGMm+8Td687ZTB4JulXVDdUc+rHQNSWH/o4T8mdYozMWyI4=

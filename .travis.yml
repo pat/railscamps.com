@@ -8,9 +8,12 @@ before_install:
 script: bundle exec jekyll build
 after_script:
 - aws s3 cp _site s3://rails-camps-site/ --recursive --acl public-read
+- aws configure set preview.cloudfront true
+- aws cloudfront create-invalidation --distribution-id $AWS_CLOUDFRONT_ID --paths "/*"
 branches:
   only:
   - master
 env:
   global:
-    secure: A0csqPOQ9RihtpjRYp5aWv7wcxqUwFWY5+SZikd7RR5tPm1HL9MeOTcGZLsgD4Y7rk4ox8bYoJjSLzFwGzE8WBn6BQRm+itBiDHhBOJEMzwo5JQS8LUJuUiHCP9DyGMm+8Td687ZTB4JulXVDdUc+rHQNSWH/o4T8mdYozMWyI4=
+  - secure: A0csqPOQ9RihtpjRYp5aWv7wcxqUwFWY5+SZikd7RR5tPm1HL9MeOTcGZLsgD4Y7rk4ox8bYoJjSLzFwGzE8WBn6BQRm+itBiDHhBOJEMzwo5JQS8LUJuUiHCP9DyGMm+8Td687ZTB4JulXVDdUc+rHQNSWH/o4T8mdYozMWyI4=
+  - secure: gVi8rrG/jbev0z9wKuOmEdbF3Ouy6khn9ekODCgVFnVW1Y1gvTCQnlIpE1YsOlzfAEHNkljIgTjQQ9rqB5ZOtOq+AK3z5h7j1SLxbEzTcrY/xQ/TBV/kF6Slym9F0I3YhDwBHricmXw/rJ1rvnft2MicRgbEGj24Vc1YKcJJeyE=

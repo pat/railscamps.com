@@ -68,8 +68,8 @@ h2 {
   color: #2F96D4;
 }
 
-#home dd p, #home ul {
-  margin-top: -1.45em; /* 12.5px */
+#home dd {
+  margin-top: -2em
 }
 
 #home p, #home ul {
@@ -78,13 +78,13 @@ h2 {
 }
 
 #home dd ul {
-  
+
 }
 #home dd ul li {
   display: inline;
   padding-left: 12px;
   padding-right: 2px;
-  background: transparent url(../images/dot.png) no-repeat 0 0.3em;
+  background: transparent url(../images/dot.png) no-repeat 0 0.5em;
 }
 #home dd ul li.first {
   padding-left: 0;

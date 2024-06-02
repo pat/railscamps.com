@@ -1,5 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '3.3.0'
+ruby file: ".ruby-version"
 
-gem 'jekyll', '~> 4.1'
+gem "jekyll", "~> 4.1"

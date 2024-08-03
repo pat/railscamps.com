@@ -1,6 +1,6 @@
-# Project Title
+# Ruby Retreats
 
-This repository hosts the files that comprise the Rails Camp homepage.
+This repository hosts the files that comprise the Ruby Retreat / Rails Camp homepage.
 https://rails.camp
 
 ## Environment Setup
@@ -12,8 +12,7 @@ On OS X with BASH
 brew update && brew install ruby-build rbenv # Installs rbenv and ruby-build
 echo 'eval "$(rbenv init -)' >> ~/.bash_profile # Adds rbenv to bash profile
 source ~/.bash_profile # Load the profile for the current session
-rbenv install 2.5.3
-gem install bundler -v 1.17.3
+rbenv install 3.3.4
 rbenv rehash # Updates the bin stubs for the project
 bundle install
 ```

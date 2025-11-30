@@ -123,3 +123,9 @@ ol.sponsors img {
 #home p.placeholder {
   margin: 1.5em 0;
 }
+
+#home footer {
+  margin-top: 6em;
+  padding-top: 6em;
+  border-top: 1px solid #9f9f9f;
+}
